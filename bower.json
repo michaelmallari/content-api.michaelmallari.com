@@ -1,0 +1,12 @@
+{
+	"name": "content-api.michaelmallari.com",
+	"version": "0.0.1",
+	"dependencies": {
+		"html5-boilerplate": "~4.2.0",
+		"modernizr": "~2.6.2",
+		"jquery": "~1.10.2"
+	},
+	"devDependencies": {
+
+	}
+}
