@@ -19,17 +19,26 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+if($_ENV["PHP_ENV"] == 'production') {
+	$DB_NAME = $_ENV["DB_NAME"];
+	$DB_USER = $_ENV["DB_USER"];
+	$DB_PASSWORD = $_ENV["DB_PASSWORD"];
+	$DB_HOST = $_ENV["DB_HOST"];
+}
+
+
+
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', $DB_NAME);
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', $DB_USER);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', $DB_PASSWORD);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', $DB_HOST);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -46,14 +55,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '/GS48*w!co@D;T(x9J.Q|AER2]tiqpa=GWAoK-eR]|gk$ym3O+*=) aL&sCeit)n');
+define('SECURE_AUTH_KEY',  'FlAt#Wlca]=ms`IP}Cq`$^mx*G!eMck[c{ViwedD.1r-00FrJl5}x7CR+^=1UeNV');
+define('LOGGED_IN_KEY',    '7r3>;c`]2;n/4c{Vtg//VJ=H}1sAbQAW#KhH;~O}qqB97PxO2;{b~q}4Aa@e#)1I');
+define('NONCE_KEY',        'hm$fZ+s|=q0J1)}|wU&Sv0c!.M7+i &~qBd)+_U} {+[ lE>qYr(L2Xw/q (F#WR');
+define('AUTH_SALT',        'Ui-bogwR*fTb!SR^eY=89xiXm8,.(2l]R[rhAgKt<vX3(Oc//R+4>pL001QT-2CU');
+define('SECURE_AUTH_SALT', '9PKPcs)z[5`<`PlSz?>bR5@e(:iIUax{sLhn|~Z;T$^@-@Y%^2%vDuAN?g_s+zY.');
+define('LOGGED_IN_SALT',   'OhcAk7~ngW}),_6A25v#7lnDk$wNVEjpt=e--]TAS7NqAua<^9f.M|z~*QEIW|jf');
+define('NONCE_SALT',       '$Bb#Ip}Ay2lXzLOx@{//ckv 6k+wUj<z.1w3+nnJI;,H+j$~a5.=tzyxh_/VjE%A');
 
 /**#@-*/
 
